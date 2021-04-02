@@ -1,0 +1,8 @@
+---
+- name: test code
+  hosts: all
+  tasks:
+  - name: check path exists or not
+    stat:
+      path: /tmp
+    register: output
